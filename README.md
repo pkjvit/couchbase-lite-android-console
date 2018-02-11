@@ -17,7 +17,7 @@ dependencies {
 }
 ```
 
-2. To debug your all database's it needs couchbase Manager and star will redirect to screen which have all data and sync information regarding passing manger.
+2. To debug your all database's it needs couchbase Manager and start will redirect to screen which have all data and sync information regarding manger.
 
 ```
 // Initialise by passing couchbase Manager
