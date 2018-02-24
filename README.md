@@ -2,7 +2,7 @@
 
 **Couchbase Lite Android Console** is a sdk tool provide for Couchbase Lite Android 1.4 Applications to debug all database and to track syncing.
 
-# Requirements
+## Requirements
 
 - Android 4.1+
 - Android Studio 3.0
