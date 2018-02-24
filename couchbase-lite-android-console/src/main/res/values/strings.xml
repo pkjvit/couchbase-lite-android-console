@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CouchbaseLiteConsole</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="db_name"><![CDATA[Database Name: <big><b>%1$s</b></big>]]></string>
+    <string name="doc_count"><![CDATA[Document Count: <big><b>%1$d</b></big>]]></string>
+    <string name="last_seq"><![CDATA[Last Sequence No: <big><b>%1$d</b></big>]]></string>
+    <string name="revision_count"><![CDATA[Revision Count: <big><b>%1$d</b></big>]]></string>
+    <string name="conflict_count"><![CDATA[Conflict Count: <big><b>%1$d</b></big>]]></string>
+    <string name="replication_count">Replication (%1$d)</string>
+    <string name="public_uuid"><![CDATA[Public UUID: <b>%1$s</b>]]></string>
+    <string name="private_uuid"><![CDATA[Private UUID: <b>%1$s</b>]]></string>
+    <string name="url_db"><![CDATA[URL: <i>%1$s</i>]]></string>
+    <string name="status">Status: %1$s</string>
+    <string name="change_count"><![CDATA[Change Count: <big><b>%1$d</b></big>]]></string>
+    <string name="pending_count"><![CDATA[Pending Count: <big><b>%1$d</b></big>]]></string>
+    <string name="completed_changes"><![CDATA[Completed Changes: <big><b>%1$d</b></big>]]></string>
+    <string name="last_error">Last Error: %1$s</string>
+
+
+</resources>

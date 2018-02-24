@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 MINDORKS NEXTGEN PRIVATE LIMITED
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://mindorks.com/license/apache-v2
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<resources>
+    <color name="colorPrimary">@color/blue_black_light</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#ffcc40</color>
+
+    <color name="light_gray">#dbdbdb</color>
+    <color name="light_blue_gray">#cde0f4</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#88ffffff</color>
+    <color name="translucent_white_80">#ccffffff</color>
+
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+
+
+    <color name="primaryColorBlueGray">#607D8B</color>
+    <color name="primaryLightColorBlueGray">#CFD8DC</color>
+    <color name="primaryDarkColorBlueGray">#455A64</color>
+    <color name="secondaryColorBlueGray">#CDDC39</color>
+    <color name="secondaryLightColorBlueGray">#e3f15c</color>
+    <color name="secondaryDarkColorBlueGray">#a6b320</color>
+    <color name="secondaryColorAmber">#03A9F4</color>
+
+    <color name="active">#ecd15a</color>
+    <color name="idle">#76da9e</color>
+    <color name="offline">#f17466</color>
+    <color name="stopped">#929294</color>
+</resources>

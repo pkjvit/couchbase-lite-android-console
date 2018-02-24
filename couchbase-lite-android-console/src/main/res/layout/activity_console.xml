@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.console.ConsoleActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/primaryColorBlueGray"
+        app:tabIndicatorColor="#aab5ba"
+        app:tabIndicatorHeight="8dp"
+        app:tabTextColor="@color/translucent_white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabMode="scrollable" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.pkj.wow.couchbase.lite.console.ui.view.FabProgressLayout
+        android:id="@+id/fab_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:elevation="2dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_refresh_black_24dp"
+            app:backgroundTint="?android:attr/colorBackground"
+            android:tint="@color/primaryColorBlueGray"
+            app:useCompatPadding="true"
+            android:padding="@dimen/fab_margin"
+            android:elevation="2dp"
+            />
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_80dp"
+            android:progressTintMode="multiply"
+            android:progressTint="@color/secondaryColorAmber"
+            android:backgroundTint="@color/primaryColorBlueGray"
+            android:foregroundTint="@color/secondaryColorBlueGray"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            />
+    </com.pkj.wow.couchbase.lite.console.ui.view.FabProgressLayout>
+
+</android.support.constraint.ConstraintLayout>

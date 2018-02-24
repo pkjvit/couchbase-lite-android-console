@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CouchbaseLiteRepo.iml" filepath="$PROJECT_DIR$/CouchbaseLiteRepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/couchbase-lite-android-console/couchbase-lite-android-console.iml" filepath="$PROJECT_DIR$/couchbase-lite-android-console/couchbase-lite-android-console.iml" />
+      <module fileurl="file://F:\GIT_HUB\Couchbase\project\android-project\couchbase-lite-android-console\couchbaseliteconsole.iml" filepath="F:\GIT_HUB\Couchbase\project\android-project\couchbase-lite-android-console\couchbaseliteconsole.iml" />
+    </modules>
+  </component>
+</project>
