@@ -34,6 +34,7 @@ import com.couchbase.lite.UnsavedRevision;
 import com.couchbase.lite.util.Log;
 import com.couchbase.todo.util.LiveQueryAdapter;
 import com.pkj.wow.couchbase.lite.console.CblConsole;
+import com.pkj.wow.sqliteviewer.SqliteViewerConsole;
 
 import java.util.HashMap;
 import java.util.List;

@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 
 import com.pkj.wow.couchbase.lite.console.ui.console.DatabaseDetailFragment;
+import com.pkj.wow.couchbase.lite.console.ui.console.ReplicationListFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,15 @@ public class DatabasePagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = DatabaseDetailFragment.newInstance(mDbNameList.get(position));
+        Fragment fragment;
+        switch (position){
+            case 0 :
+                fragment = ReplicationListFragment.newInstance();
+                break;
+            default :
+                fragment = DatabaseDetailFragment.newInstance(mDbNameList.get(position-1));
+                break;
+        }
         return fragment;
     }
 
@@ -43,6 +52,15 @@ public class DatabasePagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return mDbNameList.get(position);
+        String title;
+        switch (position){
+            case 0 :
+                title = "Sync *";
+                break;
+            default :
+                title = mDbNameList.get(position-1);
+                break;
+        }
+        return title;
     }
 }

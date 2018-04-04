@@ -7,6 +7,7 @@ import com.couchbase.lite.replicator.Replication;
 import com.pkj.wow.couchbase.lite.console.CblConsole;
 import com.pkj.wow.couchbase.lite.console.data.db.model.CouchDatabase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -46,6 +47,22 @@ public class AppDataManager implements DataManager {
         try {
             return mManager.getExistingDatabase(dbName).getAllReplications();
         } catch (CouchbaseLiteException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<Replication> getAllReplicationList() {
+        try {
+            List<String> dbNameList = getDbNameList();
+            List<Replication> list = new ArrayList<>(dbNameList.size()*2);
+            for (String dbName : dbNameList) {
+                List<Replication> dbReps = getReplicationList(dbName);
+                if(dbReps != null) list.addAll(dbReps);
+            }
+            return list;
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
