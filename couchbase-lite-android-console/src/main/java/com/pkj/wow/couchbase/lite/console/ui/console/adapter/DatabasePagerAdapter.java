@@ -47,7 +47,7 @@ public class DatabasePagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return mDbNameList.size();
+        return mDbNameList.size()+1;
     }
 
     @Override

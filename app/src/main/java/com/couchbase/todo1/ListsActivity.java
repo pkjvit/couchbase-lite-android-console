@@ -1,4 +1,4 @@
-package com.couchbase.todo;
+package com.couchbase.todo1;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -32,10 +32,8 @@ import com.couchbase.lite.Reducer;
 import com.couchbase.lite.SavedRevision;
 import com.couchbase.lite.UnsavedRevision;
 import com.couchbase.lite.util.Log;
-import com.couchbase.todo.util.LiveQueryAdapter;
+import com.couchbase.todo1.util.LiveQueryAdapter;
 import com.pkj.wow.couchbase.lite.console.CblConsole;
-import com.pkj.wow.sqliteviewer.SqliteViewerConsole;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

@@ -1,6 +1,5 @@
-package com.couchbase.todo;
+package com.couchbase.todo1;
 
-import android.content.Context;
 import android.util.Log;
 
 import com.couchbase.lite.replicator.RemoteRequestResponseException;

@@ -1,15 +1,13 @@
-package com.couchbase.todo.util;
+package com.couchbase.todo1.util;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.couchbase.lite.LiveQuery;
 import com.couchbase.lite.QueryEnumerator;
-import com.couchbase.todo.Application;
 
 public class LiveQueryAdapter extends BaseAdapter {
     private LiveQuery query;

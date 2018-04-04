@@ -1,4 +1,4 @@
-package com.couchbase.todo;
+package com.couchbase.todo1;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

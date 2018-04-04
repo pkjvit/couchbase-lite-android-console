@@ -1,4 +1,4 @@
-package com.couchbase.todo;
+package com.couchbase.todo1;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.couchbase.lite.Database;
 import com.couchbase.lite.Document;
-import com.couchbase.todo.util.ListFragmentPagerAdapter;
+import com.couchbase.todo1.util.ListFragmentPagerAdapter;
 
 public class ListDetailActivity extends AppCompatActivity {
 
