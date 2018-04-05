@@ -18,6 +18,7 @@ import com.pkj.wow.couchbase.lite.console.data.db.model.CouchDatabase;
 import com.pkj.wow.couchbase.lite.console.ui.base.BaseFragment;
 import com.pkj.wow.couchbase.lite.console.ui.console.adapter.RecyclerViewClickListener;
 import com.pkj.wow.couchbase.lite.console.ui.console.adapter.ReplicationAdapter;
+import com.pkj.wow.couchbase.lite.console.ui.console.adapter.ReplicationAllAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +26,7 @@ import java.util.List;
 public class ReplicationListFragment extends BaseFragment implements ReplicationListContract.View{
 
     private RecyclerView mRecyclerView;
-    private ReplicationAdapter mReplicationAdapter;
+    private ReplicationAllAdapter mReplicationAdapter;
     private ReplicationListContract.Presenter mPresenter;
 
     public ReplicationListFragment() {
@@ -68,7 +69,7 @@ public class ReplicationListFragment extends BaseFragment implements Replication
         super.onViewCreated(view, savedInstanceState);
         mRecyclerView = (RecyclerView)  view.findViewById(R.id.recyclerView);
 
-        mReplicationAdapter = new ReplicationAdapter(getContext(), new ArrayList<Replication>(), new RecyclerViewClickListener() {
+        mReplicationAdapter = new ReplicationAllAdapter(getContext(), new ArrayList<Replication>(), new RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
 
