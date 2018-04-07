@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/pkjvit/couchbase-lite-android-console'
     gitUrl = 'https://github.com/pkjvit/couchbase-lite-android-console.git'
 
-    libraryVersion = '0.1.0-3'
+    libraryVersion = '0.1.0-5'
 
     developerId = 'pkjvit'
     developerName = 'Pankaj Jangid'

@@ -1,11 +1,11 @@
-package com.couchbase.todo.util;
+package com.couchbase.todo1.util;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.couchbase.todo.TasksFragment;
-import com.couchbase.todo.UsersFragment;
+import com.couchbase.todo1.TasksFragment;
+import com.couchbase.todo1.UsersFragment;
 
 public class ListFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT;

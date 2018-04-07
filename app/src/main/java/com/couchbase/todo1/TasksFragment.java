@@ -1,4 +1,4 @@
-package com.couchbase.todo;
+package com.couchbase.todo1;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -43,7 +43,7 @@ import com.couchbase.lite.Query;
 import com.couchbase.lite.SavedRevision;
 import com.couchbase.lite.UnsavedRevision;
 import com.couchbase.lite.util.Log;
-import com.couchbase.todo.util.LiveQueryAdapter;
+import com.couchbase.todo1.util.LiveQueryAdapter;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -59,7 +59,7 @@ import java.util.List;
 import java.util.Map;
 
 import static android.app.Activity.RESULT_OK;
-import static com.couchbase.todo.ListDetailActivity.INTENT_LIST_ID;
+import static com.couchbase.todo1.ListDetailActivity.INTENT_LIST_ID;
 
 
 public class TasksFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.couchbase.todo;
+package com.couchbase.todo1;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -27,13 +27,13 @@ import com.couchbase.lite.Mapper;
 import com.couchbase.lite.Query;
 import com.couchbase.lite.UnsavedRevision;
 import com.couchbase.lite.util.Log;
-import com.couchbase.todo.util.LiveQueryAdapter;
+import com.couchbase.todo1.util.LiveQueryAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.couchbase.todo.ListDetailActivity.INTENT_LIST_ID;
+import static com.couchbase.todo1.ListDetailActivity.INTENT_LIST_ID;
 
 public class UsersFragment extends Fragment {
     private LayoutInflater mInflater;

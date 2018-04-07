@@ -17,4 +17,6 @@ public interface DataManager {
 
     List<Replication> getReplicationList(String dbName);
 
+    List<Replication> getAllReplicationList();
+
 }
