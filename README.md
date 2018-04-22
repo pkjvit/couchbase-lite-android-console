@@ -13,7 +13,7 @@
 
 ```
 dependencies {
-    compile 'com.pkj.wow.couchbase.lite.android.console:couchbase-lite-android-console:0.1.0-5'
+    compile 'com.pkj.wow.paginationview:PaginationView:1.0.1-1'
 }
 ```
 
