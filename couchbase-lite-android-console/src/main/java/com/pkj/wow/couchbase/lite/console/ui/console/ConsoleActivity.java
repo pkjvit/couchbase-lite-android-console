@@ -49,13 +49,13 @@ public class ConsoleActivity extends BaseActivity implements ConsoleContract.Vie
                 mPresenter.notifyDataSetChange();
                 mFabProgressLayout.setEnabled(false);
                 mFabProgressLayout.startProgress();
-                mFabProgressLayout.postDelayed(new Runnable() {
+                mHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         mFabProgressLayout.stopProgress();
                         mFabProgressLayout.setEnabled(true);
                     }
-                },2000);
+                },1000);
             }
         });
         refreshDbStats();
@@ -73,6 +73,12 @@ public class ConsoleActivity extends BaseActivity implements ConsoleContract.Vie
                 mPresenter.notifyDataSetChange();
                 refreshDbStats();
             }
-        }, 5000);
+        }, 3000);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mHandler.removeCallbacksAndMessages(null);
     }
 }
