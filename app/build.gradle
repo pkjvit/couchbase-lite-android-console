@@ -45,4 +45,7 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.4.1'
     implementation 'com.robotpajamas.stetho:stetho-couchbase:0.1.0'
     implementation project(':couchbase-lite-android-console')
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 }

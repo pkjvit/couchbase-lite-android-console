@@ -27,6 +27,7 @@ import com.couchbase.lite.replicator.Replication;
 import com.couchbase.lite.util.ZipUtils;
 import com.facebook.stetho.Stetho;
 import com.robotpajamas.stetho.couchbase.CouchbaseInspectorModulesProvider;
+import com.squareup.leakcanary.LeakCanary;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -93,6 +94,13 @@ public class Application extends android.app.Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
     }
 
     // Logging
