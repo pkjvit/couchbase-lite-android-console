@@ -5,7 +5,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application>
-        <activity android:name="com.pkj.wow.couchbase.lite.console.ui.console.ConsoleActivity"></activity>
+        <activity android:name="com.pkj.wow.couchbase.lite.console.ui.console.ConsoleActivity"
+            android:documentLaunchMode="intoExisting"></activity>
     </application>
 
 </manifest>
