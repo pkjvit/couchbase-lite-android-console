@@ -2,6 +2,14 @@
 
 **Couchbase Lite Android Console** is a sdk tool provide for Couchbase Lite Android 1.4 Applications to debug all database and to track syncing.
 
+## Screen Shots
+
+<div>
+<img src="https://github.com/pkjvit/couchbase-lite-android-console/blob/master/ScreenShots/cblite_console_01.png" width="400">
+<img width="20">
+<img src="https://github.com/pkjvit/couchbase-lite-android-console/blob/master/ScreenShots/cblite_console_02.png" width="400">
+</div>
+
 ## Requirements
 
 - Android 4.1+
@@ -13,7 +21,7 @@
 
 ```
 dependencies {
-    compile 'com.pkj.wow.couchbase.lite.android.console:couchbase-lite-android-console:0.1.0-6'
+    compile 'com.pkj.wow.couchbase.lite.android.console:couchbase-lite-android-console:0.1.0-7'
 }
 ```
 
